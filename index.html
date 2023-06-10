@@ -3,51 +3,58 @@
 <head>
   <title>Bijay Basnet</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
-  <header>
-    <h1>Welcome!!!</h1>
-  </header>
   
-  <nav>
+  <nav class="fixed-nav">
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="social-media"><a href="#"><i class="fab fa-github"></i></a></li>
+      <li class="social-media"><a href="#"><i class="fab fa-linkedin"></i></a></li>
     </ul>
   </nav>
   
-  <main>
-    <section id="home">
+  <main class="main-content">
+    <section class="section">
       <h2>Home</h2>
       <p>Welcome to my personal website!</p>
     </section>
     
-    <section id="about">
+    <section class="section">
       <h2>About</h2>
       <p>I'm passionate about data science and machine learning</p>
+      <a class="btn" href="about.html">Read More</a>
     </section>
     
-    <section id="projects">
+    <section class="section">
       <h2>Projects</h2>
       <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
+        <li class="card">
+          <h3>Project 1</h3>
+          <p>Description of project 1</p>
+        </li>
+        <li class="card">
+          <h3>Project 2</h3>
+          <p>Description of project 2</p>
+        </li>
+        <li class="card">
+          <h3>Project 3</h3>
+          <p>Description of project 3</p>
+        </li>
       </ul>
     </section>
     
-    <section id="contact">
+    <section class="section">
       <h2>Contact</h2>
       <p>You can reach me at bijaybasnetwork@gmail.com</p>
+      <a class="btn" href="contact.html">Get in Touch</a>
     </section>
   </main>
   
-  <footer>
-    <p>&copy; 2023</p>
-  </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
