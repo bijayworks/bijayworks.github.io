@@ -5,10 +5,10 @@ body, h1, h2, p, ul {
 }
 
 body {
-  background-image: url('bg.JPG');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9); /* Set the background color with lower opacity */  color: #fff; /* Set the text color to white */ /* Add this line to fix the background image */
 }
+
+
 
 /* Base styles */
 .header {
@@ -24,7 +24,7 @@ body {
   left: 0;
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 15px;
 }
 
 .fixed-nav ul {
@@ -35,29 +35,36 @@ body {
 
 .fixed-nav ul li {
   margin-right: 10px;
+  padding: 0 5px; /* Adds horizontal padding */
 }
 
 .fixed-nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 18px; /* Increase the font size */
+  padding: 0px 8px; /* Adjust the padding */
 }
 
 .main-content {
-  margin-top: 60px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Increase the width of the content */
+    max-width: 1600px; /* Increase the width of the content */
+    margin-left: auto; /* Center the content horizontally */
+    margin-right: auto;
+  }
+
 
 .section {
-  margin-bottom: 30px;
+  margin-bottom: 0;
   width: 100%;
-  max-width: 600px;
-  background-color: #fff;
+  max-width: 1600px;
+  background-color: #eee;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 h1, h2, h3 {
@@ -75,22 +82,56 @@ h1, h2, h3 {
   margin-top: 10px;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
 .card {
-  background-color: #f9f9f9;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #000000;
+  border-radius: 10px; /* Increase the border radius as desired */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px; /* Increase the height of the card as desired */
 }
 
-.card h3 {
-  color: #333;
-  margin-bottom: 5px;
+.card a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit;
 }
 
-.card p {
-  color: #666;
-  margin-bottom: 10px;
+.card .card-title {
+  margin-top: 0;
 }
+
+.card .card-description {
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Show up to 4 lines of description */
+  -webkit-box-orient: vertical;
+}
+
+.card .card-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Add spacing between image and description */
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+
 
 /* Responsive design */
 @media screen and (max-width: 600px) {
