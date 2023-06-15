@@ -1,0 +1,30 @@
+/* Navigation */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #aaa;
+    padding: 15px;
+  }
+  
+  .fixed-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fixed-nav li {
+    margin-right: 10px;
+  }
+  
+  .fixed-nav li a {
+    color: #aaa;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .fixed-nav a.active {
+    color: #fff; 
+  }
