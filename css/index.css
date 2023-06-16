@@ -5,7 +5,7 @@
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 1px solid #000;
+    border: 2px solid #000;
     height: 600px;
     overflow: hidden;
   }
